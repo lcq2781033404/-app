@@ -28,21 +28,21 @@ export default {
         },
         {
           id: '002',
-          img: 'http://img1.qunarzz.com/sight/p0/1804/7f/7f80af3ddefeb12a3.img.jpg_200x200_3c712d3a.jpg',
-          title: '郑州方特欢乐世界',
-          desc: '注重主题文化氛围和游玩体验的水世界'
+          img: 'http://img1.qunarzz.com/sight/p0/201403/10/03b24acde057acb03c1b514bd2bf638c.jpg_200x200_00cebaa5.jpg',
+          title: '郑州海洋馆',
+          desc: '这里特别受欢迎哟(๑‾ ꇴ ‾๑)'
         },
         {
           id: '003',
-          img: 'http://img1.qunarzz.com/sight/p0/1804/7f/7f80af3ddefeb12a3.img.jpg_200x200_3c712d3a.jpg',
-          title: '郑州方特欢乐世界',
-          desc: '注重主题文化氛围和游玩体验的水世界'
+          img: 'http://img1.qunarzz.com/sight/p0/201309/12/317f9a83c526f54ac8d65eac.jpg_200x200_47220a8b.jpg',
+          title: '古柏渡飞黄风景区',
+          desc: '既有西北风光之雄奇，又有江南景色的秀美'
         },
         {
           id: '004',
-          img: 'http://img1.qunarzz.com/sight/p0/1804/7f/7f80af3ddefeb12a3.img.jpg_200x200_3c712d3a.jpg',
-          title: '郑州方特欢乐世界',
-          desc: '注重主题文化氛围和游玩体验的水世界'
+          img: 'http://img1.qunarzz.com/sight/p0/1412/12/88ee179e9cdd4902ffecc16e12fa4e1e.water.jpg_200x200_08bf7b1e.jpg',
+          title: '世纪欢乐园',
+          desc: '探寻火车文化，感受迪斯尼欢乐'
         }
       ]
     }
@@ -77,6 +77,9 @@ export default {
       .item-desc {
         line-height: 0.5rem;
         color: #ccc;
+        font-size: 12px;
+        ellipsis();
+        width: 85%;
       }
       .item-button {
         line-height: 0.44rem;
