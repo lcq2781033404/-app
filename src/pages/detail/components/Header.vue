@@ -26,6 +26,10 @@ export default {
   activated () {
     window.addEventListener('scroll', this.handleScoll)
   },
+  deactivated () {
+  	/*事件解绑*/
+    window.removeEventListener('scroll', this.handleScoll)
+  },
   methods: {
     handleScoll () {
       var top = document.documentElement.scrollTop
