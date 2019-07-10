@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg">
+      <img class="banner-img" :src="bannerImg">
       <div class="banner-info">
-        <div class="banner-title">故宫(AAAAA景区)</div>
-        <div class="banner-number"><span class="iconfont banner-icon">&#xe691;</span>10</div>
+        <div class="banner-title">{{sightName}}</div>
+        <div class="banner-number"><span class="iconfont banner-icon">&#xe691;</span>{{gallaryImgs.length}}</div>
       </div>
     </div>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="closeGallary"></common-gallary>
+    <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="closeGallary"></common-gallary>
   </div>
 </template>
 
@@ -15,13 +15,17 @@
 import CommonGallary from 'common/gallary/Gallary.vue'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   components: {
     CommonGallary: CommonGallary
   },
   data () {
     return {
-      showGallary: false,
-      imgs: []
+      showGallary: false
     }
   },
   methods: {
