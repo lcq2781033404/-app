@@ -27,7 +27,6 @@ export default {
     window.addEventListener('scroll', this.handleScoll)
   },
   deactivated () {
-  	/*事件解绑*/
     window.removeEventListener('scroll', this.handleScoll)
   },
   methods: {
